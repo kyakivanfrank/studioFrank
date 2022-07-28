@@ -1,0 +1,121 @@
+.landingPage{
+    .displayBox{
+        position: relative;
+        width: 40%;
+        margin: 0 auto 20px;
+        height: 220px;
+        animation: loading-displaybox 2s;
+
+        @keyframes loading-displaybox {
+            0%{
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            100%{
+                transform: translateY(0px);
+                opacity: 1;
+
+            }
+        }
+        #boy-img{
+            height: 70%;
+            position: absolute;
+            left: 52%;
+            animation: hoverboy 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes hoverboy {
+            0%{
+                // transform: translateY(0px) 
+            }
+
+            40%{
+                transform: translateY(17px) 
+            }
+
+            100%{
+                // transform: translateY(0px) 
+            }
+            
+        }
+
+        #shadow{
+            border-radius: 100%;
+            position: absolute;
+            height: 3%;
+            left: 60%;
+            // transform: translateX(-38%);
+            top: 80%;
+            animation: shadow 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shadow {
+            0%{
+                transform: scale(1);
+            }
+
+            40%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        
+    }
+            #laptop-img{
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+        }   
+}
+
+.helloText{
+    position: absolute;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+   p {
+       span{
+           transition: all 1s;
+       } 
+   }
+
+    span{
+        cursor: pointer;
+    }
+
+    .btn{
+        backface-visibility: hidden;
+        padding: 12px 20px;
+        display: block;
+        text-transform: uppercase;
+        transition: all .5s;
+
+        &:active,
+        &:visited{
+            transform: translateY(-1px) scale(1.01);
+
+        }
+         &:hover{
+             transform: translateY(-2px) scale(1.01);
+             padding: 12px 30px;
+             border-radius: 120px;
+         }
+    }
+    
+    .btn-white{
+        border: 2px yellow solid;
+        color: white;
+        border-radius: 100px;
+        width: fit-content;
+        margin: 10px auto;
+    }
+}
+
+}

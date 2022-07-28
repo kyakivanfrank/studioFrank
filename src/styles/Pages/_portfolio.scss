@@ -1,0 +1,107 @@
+.portfolio{
+
+    h1{ text-align: center;
+    padding: 20px 0}
+
+    .tabs{
+        border-bottom: 3px white solid;
+        margin: 20px 0;
+        
+        button{
+            color: white;
+            padding: 10px 15px;
+            font-size: 20px;
+            background: none;
+            border: none;
+            transition: .5s;
+
+            &:active,
+            &:visited{
+                color: white;
+                background-color: rgba(0, 0, 0, 0.19);
+            }
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.309)}
+        }
+
+        .active-tab.active{
+            color: black;
+            background-color: white;
+            &:focus,
+            &:active{
+                outline: none;
+                border: none;
+            }
+        }
+        
+    }
+
+    .port_box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+
+        .work{
+            cursor: pointer;
+            position: relative;
+            animation: work 2s;
+
+            h3{
+                position: absolute;
+                bottom: 10%;
+                left: 5%;
+                font-weight: 400;
+                opacity: 0;
+            }
+
+            img{
+                background-color: black;
+                transition: all 1s;
+                width: 100%;
+                transition: transform  1s;
+            }
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.15);
+                h3{
+                    opacity: 1;
+                }
+                img{
+                    opacity: .2;
+                    transform: scale(1.2);
+                    transition: all 1s;
+                    animation: img 10s;
+                    animation-delay: 1s;
+                    animation-iteration-count: infinite;
+                    @keyframes img {
+                        50%{
+                            transform: translateY(10px);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @keyframes work {
+            0%{
+                transform: translateY(15px);
+                opacity: 0;
+            }
+
+            100%{
+                transform: translateY(0);
+                opacity: 1;
+
+
+            }
+            
+        }
+
+       
+    
+    }
+
+}
+
+
+

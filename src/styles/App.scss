@@ -1,0 +1,132 @@
+$textColor: white;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{color: $textColor}
+p{
+    line-height: 1.5;
+    font-size: 18px;
+    padding: .5em 0;
+}
+
+body{
+    background-color: black;
+    
+    background-image:
+     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.602)),
+      url("../resources/images/desktopKeyboard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position-y: -20vh;
+    a{text-decoration: none}
+
+}
+
+
+// this is the menu
+@import './component_styles/menu';
+// this is the header
+@import './component_styles/header';
+//  this is the footer
+@import './component_styles/footer';
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.667);
+}
+
+
+.modal_overlay{
+    // display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    // background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+    .modal-img{
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+}
+
+
+.container{
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    animation: container  2s;
+
+
+    @keyframes container {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+        
+    }
+    // padding: 4vmax 0 ;
+
+    //  pages 
+    @import './Pages/landingPage';
+    @import './Pages/about';
+    @import './Pages/portfolio';
+    @import './Pages/contact';
+    @import './Pages/plans';
+
+}
+
+
+
+// this is responsiveness
+//  this is tablet view
+@import './tablet';
+
+//  this is mobile view
+@import './mobile';

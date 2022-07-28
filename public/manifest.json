@@ -1,0 +1,8 @@
+{
+  "short_name": "thumbs",
+  "name": "thumbs at work",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

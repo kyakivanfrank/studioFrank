@@ -1,0 +1,87 @@
+ @media screen and (max-width: 1024px) {
+
+        body{
+            background-size: 350vmax;
+            background-position-y: -97vh;
+            background-position-x: -237vw;
+        }
+
+header{
+    z-index: 0;
+    position: sticky;
+    opacity: 1;
+    background-color: black;
+    .header{
+        width: 95%;
+        .logo{
+            padding: 0.5vh 0;
+            img{width: 3.7vw;}
+            h2{ font-size:3.7vw}
+        }
+        .menuClickable{ 
+            right: 5vw;
+
+            .bar1, .bar2, .bar3 {
+                width: 20px;
+                height: 3px;
+            }
+        
+        }
+}
+}
+
+
+.container{
+.landingPage{
+    .helloText{
+        width:80%;
+    }
+}
+    width: 90%;
+
+    .about{
+        padding: 0;
+    .hero_details{
+        align-items: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px 0;
+        .hero_pic{
+            justify-self: center;
+            img{ 
+                max-width: 320px;
+                position: static;
+        }
+        }
+    }
+    }
+
+
+    .portfolio{
+        .port_box{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+
+.plans {
+
+.plans_box {
+    
+        transition: all 1s;
+        transition-delay: .3s;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }}
+
+
+}
+
+
+}
+
+
