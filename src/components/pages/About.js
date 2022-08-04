@@ -15,8 +15,8 @@ export default ()=> <div className="about">
     </div>
 
     <span>
-        <p>First of all Lemme introduce myself, I'm Kyakusse Frank Ivan. A professional Web developer/designer who focuses mostly on the front-end( user interfaces ) and am the sole ideologist of studio<b>Frank</b> </p>
-       <p>To me, this is simply a virtual office location where am able to connect with entreprenuers/ clients so we could work together and implement their ideas to the internet.
+        <p>Hi there, I'm Frank Ivan Kyakusse. A Front-end web developer(client side interfaces) and am the sole ideologist of studio<b>Frank</b> </p>
+       <p>To me this is a simple  virtual location where am able to connect with you and showcase what i can put on your regarding web application technologies.
            Here you'd be able to know what i'd put on your table.
        </p>
        <p>I prefer to perceive this virtual space as a studio where i can ideologize and bring my works to life and this drove me to coin it as <b>studioFrank</b> With "Frank" being extracted from my name. I also hold a Tiktok(studioFrank) where i used to choose and talk about science, technology and lifestyle topics in luganda, this was all inspired from imy love for science and technology</p>
