@@ -4,7 +4,7 @@ import { GlobalContext }  from "../../Context/GlobalState"
 
 
 
-export default ()=>{
+const Menu=()=>{
     const { buttonToggler, toggleAction } = useContext(GlobalContext)
 
     return <>
@@ -26,3 +26,5 @@ export default ()=>{
 </>
 
 }
+
+ export default Menu;
