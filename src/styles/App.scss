@@ -16,13 +16,13 @@ p{
 
 body{
     background-color: black;
-    
     background-image:
-     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.602)),
+     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.602)),
       url("../resources/images/desktopKeyboard.png");
     background-size: cover;
     background-repeat: no-repeat;
     // background-position-y: -20vh;
+
     a{text-decoration: none}
 
 }
