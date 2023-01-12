@@ -1,9 +1,8 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -13,71 +12,58 @@ h1, h2, h3, h4, h5, p {
 p {
   line-height: 1.5;
   font-size: 18px;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 body {
   background-color: black;
-  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(0, 0, 0, 0.37)), to(rgba(0, 0, 0, 0.602))), url("../resources/images/desktopKeyboard.png");
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.602)), url("../resources/images/desktopKeyboard.png");
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.602)), url("../resources/images/desktopKeyboard.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-position-y: -20vh;
 }
-
 body a {
   text-decoration: none;
 }
 
 .closable {
   z-index: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
   display: inline;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   position: absolute;
   right: 11vw;
   top: 4vh;
 }
-
 .closable .bar1, .closable .bar2, .closable .bar3 {
   width: 35px;
   height: 5px;
   background-color: #fff;
   margin: 6px 0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
-
 .closable .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-
 .closable .bar2 {
   opacity: 0;
 }
-
 .closable .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.97);
+  background-color: rgb(0, 0, 0);
   position: fixed;
   z-index: 2;
-  -webkit-animation: overlay  1s;
-          animation: overlay  1s;
-  -webkit-transition: all 1s;
+  -webkit-animation: overlay 1s;
+          animation: overlay 1s;
   transition: all 1s;
 }
-
 @-webkit-keyframes overlay {
   0% {
     opacity: 0;
@@ -86,7 +72,6 @@ body a {
     opacity: 1;
   }
 }
-
 @keyframes overlay {
   0% {
     opacity: 0;
@@ -95,32 +80,26 @@ body a {
     opacity: 1;
   }
 }
-
 .overlay ul {
   text-align: center;
   list-style-type: none;
   position: absolute;
   top: 50vh;
   left: 50vw;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .overlay ul li {
   margin: 2px 0;
 }
-
 .overlay ul li h3 {
   color: rgba(255, 255, 255, 0.435);
   font-size: 30px;
   font-weight: 500;
   padding: 10px 20px;
 }
-
 .overlay ul li h3:hover {
   color: white;
-  -webkit-transition: color .8s;
-  transition: color .8s;
+  transition: color 0.8s;
 }
 
 header {
@@ -129,89 +108,63 @@ header {
   position: sticky;
   width: 100%;
   opacity: 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
+  transition-delay: 5s;
 }
-
 header:hover {
   opacity: 1;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  transition-delay: 0.2s;
 }
-
 header .header {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
-
 header .header .logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+  z-index: 0;
   display: inline-flex;
   padding: 1.5vh 0;
 }
-
 header .header .logo img {
   width: 3vw;
-  margin: 0 .8vw;
+  margin: 0 0.8vw;
 }
-
 header .header .logo h2 {
   font-size: 2.5vw;
   font-weight: 300;
   display: inline-block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 header .header .menuClickable {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
   display: inline;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   position: absolute;
   right: 11vw;
   z-index: 1;
 }
-
 header .header .menuClickable .bar1, header .header .menuClickable .bar2, header .header .menuClickable .bar3 {
   width: 35px;
   height: 5px;
   background-color: #fff;
   margin: 6px 0;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 header .header .menuClickable .clicked .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-
 header .header .menuClickable .clicked .bar2 {
   opacity: 0;
 }
-
 header .header .menuClickable .clicked .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 footer div {
   float: right;
   padding: 10px;
 }
-
 footer div h3 {
   font-weight: 400;
 }
@@ -225,24 +178,15 @@ footer div h3 {
 }
 
 .modal_overlay {
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
 }
-
 .modal_overlay .close {
   position: absolute;
   top: 15px;
@@ -250,17 +194,14 @@ footer div h3 {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .modal_overlay .modal-img {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
 }
-
 .modal_overlay #caption {
   margin: auto;
   display: block;
@@ -279,10 +220,9 @@ footer div h3 {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  -webkit-animation: container  2s;
-          animation: container  2s;
+  -webkit-animation: container 2s;
+          animation: container 2s;
 }
-
 @-webkit-keyframes container {
   0% {
     opacity: 0;
@@ -291,7 +231,6 @@ footer div h3 {
     opacity: 1;
   }
 }
-
 @keyframes container {
   0% {
     opacity: 0;
@@ -300,7 +239,6 @@ footer div h3 {
     opacity: 1;
   }
 }
-
 .container .landingPage .displayBox {
   position: relative;
   width: 40%;
@@ -309,33 +247,26 @@ footer div h3 {
   -webkit-animation: loading-displaybox 2s;
           animation: loading-displaybox 2s;
 }
-
 @-webkit-keyframes loading-displaybox {
   0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
-
 @keyframes loading-displaybox {
   0% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
-
 .container .landingPage .displayBox #boy-img {
   height: 70%;
   position: absolute;
@@ -345,29 +276,16 @@ footer div h3 {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes hoverboy {
-  0% {
-  }
   40% {
-    -webkit-transform: translateY(17px);
-            transform: translateY(17px);
-  }
-  100% {
+    transform: translateY(17px);
   }
 }
-
 @keyframes hoverboy {
-  0% {
-  }
   40% {
-    -webkit-transform: translateY(17px);
-            transform: translateY(17px);
-  }
-  100% {
+    transform: translateY(17px);
   }
 }
-
 .container .landingPage .displayBox #shadow {
   border-radius: 100%;
   position: absolute;
@@ -379,85 +297,63 @@ footer div h3 {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes shadow {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   40% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @keyframes shadow {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   40% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 .container .landingPage .displayBox #laptop-img {
   height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .container .landingPage .helloText {
   position: absolute;
   width: 75%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .container .landingPage .helloText p span {
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
-
 .container .landingPage .helloText span {
   cursor: pointer;
 }
-
 .container .landingPage .helloText .btn {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   padding: 12px 20px;
   display: block;
   text-transform: uppercase;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .container .landingPage .helloText .btn:active, .container .landingPage .helloText .btn:visited {
-  -webkit-transform: translateY(-1px) scale(1.01);
-          transform: translateY(-1px) scale(1.01);
+  transform: translateY(-1px) scale(1.01);
 }
-
 .container .landingPage .helloText .btn:hover {
-  -webkit-transform: translateY(-2px) scale(1.01);
-          transform: translateY(-2px) scale(1.01);
+  transform: translateY(-2px) scale(1.01);
   padding: 12px 30px;
   border-radius: 120px;
 }
-
 .container .landingPage .helloText .btn-white {
   border: 2px yellow solid;
   color: white;
@@ -467,84 +363,66 @@ footer div h3 {
   width: fit-content;
   margin: 10px auto;
 }
-
 .container .about {
   overflow-y: auto;
+  scrollbar-face-color: none;
 }
-
 .container .about h1 {
   text-align: center;
   padding: 20px 0;
 }
-
 .container .about .hero_details {
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
   grid-gap: 40px;
 }
-
 .container .about .hero_details .hero_pic img {
   position: fixed;
   max-width: 250px;
 }
-
 .container .portfolio h1 {
   text-align: center;
   padding: 20px 0;
 }
-
 .container .portfolio .tabs {
   border-bottom: 3px white solid;
   margin: 20px 0;
 }
-
 .container .portfolio .tabs button {
   color: white;
   padding: 10px 15px;
   font-size: 20px;
   background: none;
   border: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .container .portfolio .tabs button:active, .container .portfolio .tabs button:visited {
   color: white;
   background-color: rgba(0, 0, 0, 0.19);
 }
-
 .container .portfolio .tabs button:hover {
   background-color: rgba(0, 0, 0, 0.309);
 }
-
 .container .portfolio .tabs .active-tab.active {
   color: black;
   background-color: white;
 }
-
 .container .portfolio .tabs .active-tab.active:focus, .container .portfolio .tabs .active-tab.active:active {
   outline: none;
   border: none;
 }
-
 .container .portfolio .port_box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 }
-
 .container .portfolio .port_box .work {
   cursor: pointer;
   position: relative;
   -webkit-animation: work 2s;
           animation: work 2s;
 }
-
 .container .portfolio .port_box .work h3 {
   position: absolute;
   bottom: 10%;
@@ -552,31 +430,21 @@ footer div h3 {
   font-weight: 400;
   opacity: 0;
 }
-
 .container .portfolio .port_box .work img {
   background-color: black;
-  -webkit-transition: all 1s;
   transition: all 1s;
   width: 100%;
-  -webkit-transition: -webkit-transform  1s;
-  transition: -webkit-transform  1s;
-  transition: transform  1s;
-  transition: transform  1s, -webkit-transform  1s;
+  transition: transform 1s;
 }
-
 .container .portfolio .port_box .work:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
-
 .container .portfolio .port_box .work:hover h3 {
   opacity: 1;
 }
-
 .container .portfolio .port_box .work:hover img {
-  opacity: .2;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 1s;
+  opacity: 0.2;
+  transform: scale(1.2);
   transition: all 1s;
   -webkit-animation: img 10s;
           animation: img 10s;
@@ -585,86 +453,64 @@ footer div h3 {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes img {
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
-
 @keyframes img {
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
-
 @-webkit-keyframes work {
   0% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    transform: translateY(15px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 @keyframes work {
   0% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    transform: translateY(15px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 .container .contact {
   text-align: center;
 }
-
 .container .contact h1 {
   padding: 20px 0;
 }
-
 .container .contact .socialIcons {
-  padding-top: 10px;
+  padding: 20px;
 }
-
 .container .contact .socialIcons img {
   width: 60px;
+  margin: 0 5px;
 }
-
 .container .plans h1 {
   text-align: center;
 }
-
 .container .plans .plans_box {
   padding: 40px;
-  -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-  display: -ms-grid;
+  transition-delay: 0.3s;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
-
 .container .plans .plans_box span .plan {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
   margin: 0 auto;
   cursor: pointer;
   position: relative;
@@ -673,63 +519,48 @@ footer div h3 {
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.67);
 }
-
 .container .plans .plans_box span .plan h1 {
   font-weight: 400;
-  -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
   text-align: center;
   position: absolute;
   top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
-
 .container .plans .plans_box span .plan ul {
   padding: 20px 0;
   border-top: 2px white solid;
   width: 80%;
-  -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
   opacity: 0;
   position: absolute;
   top: 30%;
   left: 50%;
-  -webkit-transform: translate(-50%) scale(0);
-          transform: translate(-50%) scale(0);
+  transform: translate(-50%) scale(0);
 }
-
 .container .plans .plans_box span .plan ul li {
   list-style-type: none;
   padding: 8px 0;
 }
-
 .container .plans .plans_box span .plan ul li h2 {
   text-align: center;
   font-weight: 300;
 }
-
 .container .plans .plans_box span .plan:hover {
   background-color: rgba(0, 0, 0, 0.424);
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
   border-radius: 20px;
   width: 300px;
   height: 350px;
 }
-
 .container .plans .plans_box span .plan:hover h1 {
   top: 5%;
 }
-
 .container .plans .plans_box span .plan:hover ul {
-  -webkit-transform: translate(-50%) scale(1);
-          transform: translate(-50%) scale(1);
+  transform: translate(-50%) scale(1);
   opacity: 1;
 }
 
@@ -775,42 +606,31 @@ footer div h3 {
     padding: 0;
   }
   .container .about .hero_details {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px 0;
   }
   .container .about .hero_details .hero_pic {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .container .about .hero_details .hero_pic img {
     max-width: 320px;
     position: static;
   }
   .container .portfolio .port_box {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .container .plans .plans_box {
-    -webkit-transition: all 1s;
     transition: all 1s;
-    -webkit-transition-delay: .3s;
-            transition-delay: .3s;
-    display: -ms-grid;
+    transition-delay: 0.3s;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
 }
-
 @media screen and (max-width: 768px) {
   header {
     background-color: black;
@@ -832,8 +652,6 @@ footer div h3 {
     width: 100%;
   }
   .container .portfolio .port_box {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

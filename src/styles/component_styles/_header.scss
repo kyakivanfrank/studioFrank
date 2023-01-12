@@ -17,11 +17,12 @@ header{
         display: flex;
         margin: 0 auto;
         .logo{
+            z-index: 0;
             display: inline-flex;
             padding: 1.5vh 0;
             img{
             width: 3vw;
-        margin: 0 .8vw; }
+            margin: 0 .8vw; }
             
             h2{
                 font-size:2.5vw;

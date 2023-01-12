@@ -1,10 +1,9 @@
 .about{
-
     h1{ text-align: center;
         padding: 20px 0
     }
-    
     overflow-y: auto;
+    scrollbar-face-color: none;
 .hero_details{
     width: 100%;
     display: grid;

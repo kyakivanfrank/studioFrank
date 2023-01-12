@@ -1,7 +1,8 @@
 import React from 'react'
-import facebook from "../../resources/images/facebook.png"
-import whatsapp from "../../resources/images/whatsapp.png"
-import twitter from "../../resources/images/twitter.png"
+import facebook from "../../resources/images/facebook.svg"
+import whatsapp from "../../resources/images/whatsapp.svg"
+import twitter from "../../resources/images/twitter.svg"
+import linkedIn from "../../resources/images/linkedIn.svg"
 
 export const Contact = () => {
     return (
@@ -15,7 +16,8 @@ export const Contact = () => {
 <div className="socialIcons">
 <a href="/#"><img src={facebook} alt="facebook"/> </a>
 <a href="/#"><img src={twitter} alt="twitter"/> </a>
-<a href="/#"><img src={whatsapp} alt="whatsapp"/> </a>
+<a href="https://wa.me/256708481316"><img src={whatsapp} alt="whatsapp"/> </a>
+<a href="https://ug.linkedin.com/in/kyakusse-frank-ivan"><img src={linkedIn} alt="whatsapp"/> </a>
         </div></div>
     )
 }

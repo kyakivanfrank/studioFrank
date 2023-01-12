@@ -1,7 +1,7 @@
 import React from "react"
 
 // import heroPic  from "../../resources/images/frank.jpg"
-import heroPic1  from "../../resources/images/frankI.png"
+import heroPic1  from "../../resources/images/frank.png"
 
 
 export default ()=> <div className="about">

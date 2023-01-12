@@ -17,11 +17,12 @@ p{
 body{
     background-color: black;
     background-image:
-     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.602)),
+     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.602)),
       url("../resources/images/desktopKeyboard.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    // background-position-y: -20vh;
+    background-position-y: -20vh;
 
     a{text-decoration: none}
 
@@ -56,7 +57,7 @@ body{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     // background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    // background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
 
     
 .close{
