@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import SingleWork from './SingleWork'
 
-export default ()=> {
+export const PortfolioTabs =()=> {
  
   const arry = { "web": ["website", "web app", "native app", "desktop app" ],  "graphics": ["logo design",  "portfolio design", "poster design"] }
 

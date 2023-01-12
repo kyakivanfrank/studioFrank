@@ -4,7 +4,7 @@ import landingImage from '../../resources/laptopOnly.png'
 import boyImage from '../../resources/Boy.png'
 import shadow from '../../resources/shadow.png'
 
-export default ()=> {
+export const LandingPage =()=> {
 
     const [display, setDisplay] = useState("none")
     const [read_more, setRead_more] = useState("read more ...")

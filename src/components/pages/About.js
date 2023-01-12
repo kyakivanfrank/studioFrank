@@ -4,7 +4,7 @@ import React from "react"
 import heroPic1  from "../../resources/images/frank.png"
 
 
-export default ()=> <div className="about">
+const About =()=> <div className="about">
 
 <h1>About <span style={{fontWeight:"300"}}>studio</span>Frank</h1>
 
@@ -29,3 +29,5 @@ export default ()=> <div className="about">
 
 
 </div>
+
+export default About;
