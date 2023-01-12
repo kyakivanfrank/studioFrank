@@ -2,7 +2,7 @@ import React from "react"
 import workImage from "../../resources/project_images/projectOne.jpg"
 
 
-export const SingleWork = ({eachItem})=>{
+const SingleWork = ({eachItem})=>{
 
 
     return <a href={`/portfolio/${eachItem}`}>
@@ -15,3 +15,4 @@ export const SingleWork = ({eachItem})=>{
     </a>
 }
 
+export default SingleWork;

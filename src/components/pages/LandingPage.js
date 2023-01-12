@@ -2,9 +2,8 @@ import React, {useState} from "react"
 
 import landingImage from '../../resources/laptopOnly.png'
 import boyImage from '../../resources/Boy.png'
-import shadow from '../../resources/shadow.png'
 
-export const LandingPage =()=> {
+const LandingPage =()=> {
 
     const [display, setDisplay] = useState("none")
     const [read_more, setRead_more] = useState("read more ...")
@@ -47,3 +46,5 @@ const toggler =() => {
     </div>
 }
 
+
+export default LandingPage;

@@ -2,7 +2,7 @@ import React from 'react'
 import pic from "../../resources/sample-works/web/work.jpg"
 
 
-export const ModalOverlay = ({params})=> {
+const ModalOverlay = ({params})=> {
 
   const {eachItem} = params;
 
@@ -19,6 +19,8 @@ return <div className="modal_overlay">
 </div>
 
 }
+
+export default ModalOverlay;
 
 
 

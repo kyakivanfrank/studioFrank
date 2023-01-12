@@ -4,7 +4,7 @@ import whatsapp from "../../resources/images/whatsapp.svg"
 import twitter from "../../resources/images/twitter.svg"
 import linkedIn from "../../resources/images/linkedIn.svg"
 
-export const Contact = () => {
+ const Contact = () => {
     return (
         <div className="contact">
             <h1>Reach out to Us</h1>
@@ -21,3 +21,4 @@ export const Contact = () => {
         </div></div>
     )
 }
+export default Contact;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Plans = ()=> <div className="plans">
+const Plans = ()=> <div className="plans">
 
 
 <h1>choose a suitable plan</h1>
@@ -45,6 +45,10 @@ export const Plans = ()=> <div className="plans">
   
 
 </div>
+
+
+
+export default Plans;
 
 
 
