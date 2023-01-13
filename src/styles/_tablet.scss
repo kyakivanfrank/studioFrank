@@ -4,6 +4,7 @@
         background-size: 350vmax;
         background-position-y: -97vh;
         background-position-x: -237vw;
+
     }
 
 header{
@@ -32,6 +33,8 @@ background-color: black;
 
 
 .container{
+    // overflow: none;
+    scrollbar-width: 0px;
 .landingPage{
 .helloText{
     width:80%;
