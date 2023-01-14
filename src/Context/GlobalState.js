@@ -1,4 +1,4 @@
-import React, { createContext, useReducer}  from "react" // this are from react context API
+import React, { createContext, useReducer}  from "react" // these are from react context API
 import OurReducer from "./OurReducer"
 
 const ourState = {

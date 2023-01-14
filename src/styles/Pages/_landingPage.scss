@@ -97,13 +97,11 @@
         text-transform: uppercase;
         transition: all .5s;
 
-        &:active,
-        &:visited{
-            transform: translateY(-1px) scale(1.01);
-
+        &:active,&:visited{
+            transform: translateY(-1px) scaleY(1.01);
         }
          &:hover{
-             transform: translateY(-2px) scale(1.01);
+             transform: translateY(-2px) scaleY(1.01);
              padding: 12px 30px;
              border-radius: 120px;
          }

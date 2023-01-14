@@ -24,12 +24,13 @@ render(){
     return <GlobalProvider>
         <Route exact path={`/portfolio/:eachItem`} render={ ({match}) => <ModalOverlay {...match} /> } /> 
 
-        <div  className="main">
-            {/* <ModalOverlay/> */}
+        <div className="main">
             
         <Menu/>
         <Header/>
 
+{/* dontforget De on mouse move event(Delet this after reading it project well come back)
+and che the note file on the desktop */}
 
         <div className="container">
         <Switch>

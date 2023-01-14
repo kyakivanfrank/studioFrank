@@ -107,9 +107,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
-  opacity: 0;
   transition: all 1s;
-  transition-delay: 5s;
+  transition-delay: 15s;
 }
 header:hover {
   opacity: 1;
@@ -347,10 +346,10 @@ footer div h3 {
   transition: all 0.5s;
 }
 .container .landingPage .helloText .btn:active, .container .landingPage .helloText .btn:visited {
-  transform: translateY(-1px) scale(1.01);
+  transform: translateY(-1px) scaleY(1.01);
 }
 .container .landingPage .helloText .btn:hover {
-  transform: translateY(-2px) scale(1.01);
+  transform: translateY(-2px) scaleY(1.01);
   padding: 12px 30px;
   border-radius: 120px;
 }
