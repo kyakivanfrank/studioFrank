@@ -117,7 +117,7 @@ header:hover {
 header .header {
   width: 80%;
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 header .header .logo {
   z-index: 0;
@@ -176,6 +176,15 @@ footer div h3 {
   background-color: rgba(0, 0, 0, 0.667);
 }
 
+.img-Container {
+  position: relative;
+}
+.img-Container img {
+  position: absolute;
+  width: 50%;
+  right: 2vw;
+}
+
 .modal_overlay {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -215,7 +224,8 @@ footer div h3 {
 .container {
   position: relative;
   height: 100vh;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: visible;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
@@ -238,106 +248,27 @@ footer div h3 {
     opacity: 1;
   }
 }
-.container .landingPage .displayBox {
-  position: relative;
-  width: 40%;
-  margin: 0 auto 20px;
-  height: 220px;
-  -webkit-animation: loading-displaybox 2s;
-          animation: loading-displaybox 2s;
-}
-@-webkit-keyframes loading-displaybox {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes loading-displaybox {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-.container .landingPage .displayBox #boy-img {
-  height: 70%;
+
+.landingPage img {
+  width: 50%;
   position: absolute;
-  left: 52%;
-  -webkit-animation: hoverboy 5s;
-          animation: hoverboy 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  top: 0;
+  right: 5%;
 }
-@-webkit-keyframes hoverboy {
-  40% {
-    transform: translateY(17px);
-  }
+.landingPage .helloText {
+  width: 50%;
+  align-content: baseline;
 }
-@keyframes hoverboy {
-  40% {
-    transform: translateY(17px);
-  }
+.landingPage .helloText p {
+  margin: 0;
 }
-.container .landingPage .displayBox #shadow {
-  border-radius: 100%;
-  position: absolute;
-  height: 3%;
-  left: 60%;
-  top: 80%;
-  -webkit-animation: shadow 5s;
-          animation: shadow 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes shadow {
-  0% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes shadow {
-  0% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.container .landingPage .displayBox #laptop-img {
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.container .landingPage .helloText {
-  position: absolute;
-  width: 75%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.container .landingPage .helloText p span {
+.landingPage .helloText p span {
   transition: all 1s;
 }
-.container .landingPage .helloText span {
+.landingPage .helloText span {
   cursor: pointer;
 }
-.container .landingPage .helloText .btn {
+.landingPage .helloText .btn {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   padding: 12px 20px;
@@ -345,15 +276,12 @@ footer div h3 {
   text-transform: uppercase;
   transition: all 0.5s;
 }
-.container .landingPage .helloText .btn:active, .container .landingPage .helloText .btn:visited {
-  transform: translateY(-1px) scaleY(1.01);
-}
-.container .landingPage .helloText .btn:hover {
-  transform: translateY(-2px) scaleY(1.01);
+.landingPage .helloText .btn:hover {
   padding: 12px 30px;
+  background-color: rgba(0, 0, 0, 0.283);
   border-radius: 120px;
 }
-.container .landingPage .helloText .btn-white {
+.landingPage .helloText .btn-white {
   border: 2px yellow solid;
   color: white;
   border-radius: 100px;
@@ -362,32 +290,34 @@ footer div h3 {
   width: fit-content;
   margin: 10px auto;
 }
-.container .about {
+
+.about {
   overflow-y: auto;
 }
-.container .about h1 {
+.about h1 {
   text-align: center;
   padding: 20px 0;
 }
-.container .about .hero_details {
+.about .hero_details {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 40px;
 }
-.container .about .hero_details .hero_pic img {
+.about .hero_details .hero_pic img {
   position: fixed;
   max-width: 250px;
 }
-.container .portfolio h1 {
+
+.portfolio h1 {
   text-align: center;
   padding: 20px 0;
 }
-.container .portfolio .tabs {
+.portfolio .tabs {
   border-bottom: 3px white solid;
   margin: 20px 0;
 }
-.container .portfolio .tabs button {
+.portfolio .tabs button {
   color: white;
   padding: 10px 15px;
   font-size: 20px;
@@ -395,52 +325,52 @@ footer div h3 {
   border: none;
   transition: 0.5s;
 }
-.container .portfolio .tabs button:active, .container .portfolio .tabs button:visited {
+.portfolio .tabs button:active, .portfolio .tabs button:visited {
   color: white;
   background-color: rgba(0, 0, 0, 0.19);
 }
-.container .portfolio .tabs button:hover {
+.portfolio .tabs button:hover {
   background-color: rgba(0, 0, 0, 0.309);
 }
-.container .portfolio .tabs .active-tab.active {
+.portfolio .tabs .active-tab.active {
   color: black;
   background-color: white;
 }
-.container .portfolio .tabs .active-tab.active:focus, .container .portfolio .tabs .active-tab.active:active {
+.portfolio .tabs .active-tab.active:focus, .portfolio .tabs .active-tab.active:active {
   outline: none;
   border: none;
 }
-.container .portfolio .port_box {
+.portfolio .port_box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 }
-.container .portfolio .port_box .work {
+.portfolio .port_box .work {
   cursor: pointer;
   position: relative;
   -webkit-animation: work 2s;
           animation: work 2s;
 }
-.container .portfolio .port_box .work h3 {
+.portfolio .port_box .work h3 {
   position: absolute;
   bottom: 10%;
   left: 5%;
   font-weight: 400;
   opacity: 0;
 }
-.container .portfolio .port_box .work img {
+.portfolio .port_box .work img {
   background-color: black;
   transition: all 1s;
   width: 100%;
   transition: transform 1s;
 }
-.container .portfolio .port_box .work:hover {
+.portfolio .port_box .work:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
-.container .portfolio .port_box .work:hover h3 {
+.portfolio .port_box .work:hover h3 {
   opacity: 1;
 }
-.container .portfolio .port_box .work:hover img {
+.portfolio .port_box .work:hover img {
   opacity: 0.2;
   transform: scale(1.2);
   transition: all 1s;
@@ -481,33 +411,35 @@ footer div h3 {
     opacity: 1;
   }
 }
-.container .contact {
+
+.contact {
   text-align: center;
 }
-.container .contact h1 {
+.contact h1 {
   padding: 20px 0;
 }
-.container .contact .socialIcons {
+.contact .socialIcons {
   padding: 20px;
 }
-.container .contact .socialIcons img {
+.contact .socialIcons img {
   width: 60px;
   margin: 0 5px;
 }
-.container .plans h1 {
+
+.plans h1 {
   text-align: center;
 }
-.container .plans .plans_box {
+.plans .plans_box {
   padding: 40px;
   transition: all 1s;
   transition-delay: 0.3s;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.container .plans .plans_box span {
+.plans .plans_box span {
   margin: 0 0 80px;
 }
-.container .plans .plans_box span .plan {
+.plans .plans_box span .plan {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: all 1s;
@@ -520,22 +452,22 @@ footer div h3 {
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.67);
 }
-.container .plans .plans_box span .plan img {
+.plans .plans_box span .plan img {
   position: absolute;
   transition: all 1s;
   transition-delay: 0.3s;
 }
-.container .plans .plans_box span .plan #mobile {
+.plans .plans_box span .plan #mobile {
   width: 30%;
   left: 35%;
   top: 20%;
 }
-.container .plans .plans_box span .plan #web, .container .plans .plans_box span .plan #design {
+.plans .plans_box span .plan #web, .plans .plans_box span .plan #design {
   width: 60%;
   left: 20%;
   top: 30%;
 }
-.container .plans .plans_box span .plan h1 {
+.plans .plans_box span .plan h1 {
   font-weight: 400;
   transition: all 1s;
   transition-delay: 0.3s;
@@ -545,7 +477,7 @@ footer div h3 {
   left: 50%;
   transform: translate(-50%);
 }
-.container .plans .plans_box span .plan ul {
+.plans .plans_box span .plan ul {
   padding: 20px 0;
   border-top: 2px white solid;
   width: 80%;
@@ -557,39 +489,39 @@ footer div h3 {
   left: 50%;
   transform: translate(-50%) scale(0);
 }
-.container .plans .plans_box span .plan ul li {
+.plans .plans_box span .plan ul li {
   list-style-type: none;
   padding: 8px 0;
 }
-.container .plans .plans_box span .plan ul li h2 {
+.plans .plans_box span .plan ul li h2 {
   text-align: center;
   font-weight: 300;
 }
-.container .plans .plans_box span .plan:hover {
+.plans .plans_box span .plan:hover {
   background-color: rgba(0, 0, 0, 0.424);
   transform: rotate(360deg);
   border-radius: 20px;
   width: 300px;
   height: 350px;
 }
-.container .plans .plans_box span .plan:hover h1 {
+.plans .plans_box span .plan:hover h1 {
   top: 5%;
 }
-.container .plans .plans_box span .plan:hover ul {
+.plans .plans_box span .plan:hover ul {
   transform: translate(-50%) scale(1);
   opacity: 1;
 }
-.container .plans .plans_box span .plan:hover img {
+.plans .plans_box span .plan:hover img {
   margin: 10px;
   transition: all 1s;
   transition-delay: 0.3s;
 }
-.container .plans .plans_box span .plan:hover #mobile {
+.plans .plans_box span .plan:hover #mobile {
   width: 10%;
   top: 4%;
   left: 2%;
 }
-.container .plans .plans_box span .plan:hover #web, .container .plans .plans_box span .plan:hover #design {
+.plans .plans_box span .plan:hover #web, .plans .plans_box span .plan:hover #design {
   top: 4%;
   left: 2%;
   width: 25%;

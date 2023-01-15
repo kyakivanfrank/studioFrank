@@ -4,8 +4,8 @@ import pc from '../../resources/images/workType/pc.svg'
 import graphics from '../../resources/images/workType/graphics.svg'
 
 
-const Plans = ()=> <div className="plans">
-
+const Plans = ()=> <div className='container'>
+<div className="plans">
 
 <h1>Let's build it for you</h1>
 
@@ -52,6 +52,9 @@ const Plans = ()=> <div className="plans">
         </div>
 
 </div>
+</div>
+
+
 
 
 export default Plans;

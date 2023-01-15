@@ -4,9 +4,8 @@ import whatsapp from "../../resources/images/social/whatsapp.svg"
 import twitter from "../../resources/images/social/twitter.svg"
 import linkedIn from "../../resources/images/social/linkedIn.svg"
 
- const Contact = () => {
-    return (
-        <div className="contact">
+ const Contact = () => <div className='container'>
+       <div className="contact">
             <h1>Reach out to Us</h1>
 
 
@@ -19,6 +18,7 @@ import linkedIn from "../../resources/images/social/linkedIn.svg"
 <a href="https://wa.me/256708481316"><img src={whatsapp} alt="whatsapp"/> </a>
 <a href="https://ug.linkedin.com/in/kyakusse-frank-ivan"><img src={linkedIn} alt="whatsapp"/> </a>
         </div></div>
-    )
-}
+
+ </div>
+ 
 export default Contact;

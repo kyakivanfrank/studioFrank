@@ -11,7 +11,6 @@ const Header = ()=> {
 return <header>
 <div className="header">
     <a href="/"><div className="logo" >
-        {/* <h2>studio<b>Frank</b></h2> */}
      <img style={{width:"200px", padding:"20px ,0"}} src={Logo} alt="StudioFrank_logo"/>
     </div></a>
 

@@ -28,11 +28,6 @@ render(){
             
         <Menu/>
         <Header/>
-
-{/* dontforget De on mouse move event(Delet this after reading it project well come back)
-and che the note file on the desktop */}
-
-        <div className="container">
         <Switch>
             <Route exact path="/" render={()=> <LandingPage/>}/>
             <Route  path="/plans"  render={()=> <Plans/>}/>
@@ -41,7 +36,7 @@ and che the note file on the desktop */}
             <Route  path="/contact" render={()=> <Contact/>}/>
         </Switch>
 
-        </div>
+        
         <Footer/>
 
 

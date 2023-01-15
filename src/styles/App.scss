@@ -42,8 +42,18 @@ body{
     height: 100vh;
     position: fixed;
     overflow-x: auto;
-    background-color: rgba(0, 0, 0, 0.667);
+    background-color: rgba(0, 0, 0, 0.667); 
 }
+
+.img-Container{
+    position: relative;
+    img{
+        position: absolute;
+        width: 50%;
+        right: 2vw;
+    }
+}
+
 
 
 .modal_overlay{
@@ -76,6 +86,7 @@ body{
         max-width: 700px;
 }
 
+
 #caption {
     margin: auto;
     display: block;
@@ -86,15 +97,14 @@ body{
     padding: 10px 0;
     height: 150px;
 }
-
-
 }
 
 
 .container{
     position: relative;
     height: 100vh;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: visible;
     width: 80%;
     margin: 0 auto;
     padding: 20px;
@@ -115,14 +125,15 @@ body{
     // padding: 4vmax 0 ;
 
     //  pages 
-    @import './Pages/landingPage';
+    
+
+}
+
+@import './Pages/landingPage';
     @import './Pages/about';
     @import './Pages/portfolio';
     @import './Pages/contact';
     @import './Pages/plans';
-
-}
-
 
 
 // this is responsiveness

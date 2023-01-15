@@ -1,7 +1,5 @@
-import React, {useState} from "react"
-import landingImage from '../../resources/laptopOnly.png'
-import boyImage from '../../resources/Boy.png'
-import shadow from '../../resources/shadow.png'
+import React, {useState} from "react";
+import illustration from "../../resources/frank_Illustration.svg";
 
 const LandingPage =()=> {
 
@@ -11,20 +9,13 @@ const LandingPage =()=> {
 
 const toggler =() => {
     setDisplay( display === "none" ? "block" : "none" )
-    setRead_more(read_more === "read more ..." ? " ..." : "read more ..." )
-}    
+    setRead_more(read_more === "read more ..." ? " ..." : "read more ..." )}
     
-    return <div className="landingPage"> 
-        
-    <div className="displayBox">
-    <img id="laptop-img" src={landingImage} alt="landingImage"/>
-    <img id="shadow" src={shadow} alt="landingImage"/>
-    <img id="boy-img" src={boyImage} alt="landingImage"/>
-    
-    </div>
-    
+    return <div className="landingPage">
+        <img src={illustration} alt="landing-page-illustration" />
+        <div className="container">
     <div className="helloText">
-    <h1>Hey bud,</h1>
+    <h1>SEEMLESS USER INTERFACES FOR YOUR MOBILE AND WEB APPS</h1>
     <p>
     The internet is cool for you, isn't it? The social media rush! and all those cool new apps you play around with to push your entreprenual products / services to  your visitors. 
     
@@ -38,13 +29,11 @@ const toggler =() => {
     <p>As you've reached out, we'll create solutions for you quite affordably</p>
     
     <a href="/plans" className="btn btn-white">check our plans</a>
-    
     </div>
-    
-    
-    
+
     </div>
+
+    </div>
+
 }
-
-
 export default LandingPage;
