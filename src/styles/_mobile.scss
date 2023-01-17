@@ -7,8 +7,10 @@ header{
     .header{
         width: 95%;
         .logo{
-            img{width: 5vw;}
-            h2{ font-size:6vw}
+            img{
+                width:200px;
+                padding: 5px 0;
+            }
         }
 
         .menuClickable{ 
@@ -29,6 +31,33 @@ header{
     .portfolio{
         .port_box{
             grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+}
+
+.landingPage{
+    img{
+        width:95%;
+        top:15%;
+        right:2%;
+    }
+
+    .helloText{
+        h1{font-size: 30px;}
+        margin-top: 130%;
+        width: 100%;
+        text-align: center;
+        p{
+            font-size: 18px;
+            width:100%;
+            text-align: center;
+        }
+        .btn-white{
+            font-size: 15px;
+            &:hover{
+                padding: 12px 30px 12px 30px;
+            }
         }
 
     }

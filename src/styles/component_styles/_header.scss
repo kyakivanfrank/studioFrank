@@ -2,32 +2,23 @@ header{
     z-index: 1;
     position: sticky;
     width: 100%;
-    // opacity:1;
     transition: all 1s;
     transition-delay: 15s;
-
     &:hover{
         opacity: 1;
         transition-delay: .2s;
     }
 
     .header{
+        margin: auto;
         width: 80%;
         display: flex;
-        margin: 10px auto;
         .logo{
             z-index: 0;
             display: inline-flex;
-            padding: 1.5vh 0;
             img{
-            width: 3vw;
-            margin: 0 .8vw; }
-            
-            h2{
-                font-size:2.5vw;
-                font-weight: 300;
-                display: inline-block;
-                align-self: center;
+                width:200px;
+                padding: 20px 0
             }
         }  
 

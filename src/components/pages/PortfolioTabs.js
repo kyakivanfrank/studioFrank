@@ -12,8 +12,8 @@ const PortfolioTabs =()=> {
     
   return <>
         <div className="tabs">
-  <button onClick={()=> setData(arry.web)} id="web" className={`${ webclassName } active`}>web development</button>
-  <button onClick={()=> setData(arry.graphics)} id="graphics" className={`${graphicsclassName} active`}>graphics design</button>
+  <button onClick={()=> setData(arry.web)} id="web" className={`${ webclassName } active`}>WEB DEVELOPMENT</button>
+  <button onClick={()=> setData(arry.graphics)} id="graphics" className={`${graphicsclassName} active`}>DESIGN</button>
         </div> 
 
 <div className="tabcontent">

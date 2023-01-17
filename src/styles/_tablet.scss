@@ -1,9 +1,7 @@
 @media screen and (max-width: 1024px) {
 
     body{
-        background-size: 350vmax;
-        background-position-y: -97vh;
-        background-position-x: -237vw;
+       
 
     }
 
@@ -13,9 +11,9 @@ position: sticky;
 opacity: 1;
 background-color: black;
 .header{
-    width: 95%;
+    width: 90%;
     .logo{
-        padding: 0.5vh 0;
+        // padding: 0.5vh 0;
         img{width: 3.7vw;}
         h2{ font-size:3.7vw}
     }
@@ -33,7 +31,6 @@ background-color: black;
 
 
 .container{
-    // overflow: none;
     scrollbar-width: 0px;
 .landingPage{
 .helloText{
@@ -84,6 +81,27 @@ width: 90%;
 
 }
 
+.landingPage{
+    img{
+        width:55%;
+        top:18%;
+        right:1%;
+    }
+
+    .helloText{
+        h1{font-size: 30px;}
+        margin-top: 30%;
+        width: 60%;
+        p{
+            font-size: 18px;
+            width:70%;
+        }
+        .btn-white{
+            font-size: 15px;
+        }
+
+    }
+}
 
 }
 

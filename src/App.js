@@ -6,13 +6,13 @@ import Footer from "./components/Footer/Footer"
 
 
 import { GlobalProvider } from "./Context/GlobalState"
+import LandingPage from "./components/pages/LandingPage";
 import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
-
-import { Switch, Route } from "react-router-dom"
-import LandingPage from "./components/pages/LandingPage";
 import Contact  from "./components/pages/Contact";
 import Plans from "./components/pages/Plans";
+
+import { Switch, Route } from "react-router-dom"
 import ModalOverlay  from "./components/pages/ModalOverlay";
 
 

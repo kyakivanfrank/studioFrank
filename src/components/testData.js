@@ -7,6 +7,5 @@ export default testData = {
             "projectpicture" : "first project",
         }
 
-     ],
-
-    "graphics": ["logo design",  "portfolio design", "poster design"] }
+     ], 
+     "graphics": ["logo design",  "portfolio design", "poster design"] }

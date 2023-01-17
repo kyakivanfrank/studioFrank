@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Century Gothic";
 }
 
 h1, h2, h3, h4, h5, p {
@@ -16,7 +16,6 @@ p {
 }
 
 body {
-  background-color: black;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.602)), url("../resources/images/desktopKeyboard.png");
   background-size: cover;
   background-position: center;
@@ -115,24 +114,17 @@ header:hover {
   transition-delay: 0.2s;
 }
 header .header {
+  margin: auto;
   width: 80%;
   display: flex;
-  margin: 10px auto;
 }
 header .header .logo {
   z-index: 0;
   display: inline-flex;
-  padding: 1.5vh 0;
 }
 header .header .logo img {
-  width: 3vw;
-  margin: 0 0.8vw;
-}
-header .header .logo h2 {
-  font-size: 2.5vw;
-  font-weight: 300;
-  display: inline-block;
-  align-self: center;
+  width: 200px;
+  padding: 20px 0;
 }
 header .header .menuClickable {
   align-items: center;
@@ -166,14 +158,6 @@ footer div {
 }
 footer div h3 {
   font-weight: 400;
-}
-
-.main {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  overflow-x: auto;
-  background-color: rgba(0, 0, 0, 0.667);
 }
 
 .img-Container {
@@ -223,12 +207,9 @@ footer div h3 {
 
 .container {
   position: relative;
-  height: 100vh;
-  overflow-x: auto;
-  overflow-y: visible;
+  overflow: auto;
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
   -webkit-animation: container 2s;
           animation: container 2s;
 }
@@ -249,18 +230,23 @@ footer div h3 {
   }
 }
 
+.landingPage {
+  height: 110vh;
+}
 .landingPage img {
   width: 50%;
   position: absolute;
-  top: 0;
-  right: 5%;
+  top: 1%;
+  right: 2%;
 }
 .landingPage .helloText {
-  width: 50%;
+  text-shadow: black 0 0 2px;
+  margin-top: 150px;
+  width: 60%;
   align-content: baseline;
 }
-.landingPage .helloText p {
-  margin: 0;
+.landingPage .helloText h1 {
+  font-size: 45px;
 }
 .landingPage .helloText p span {
   transition: all 1s;
@@ -269,6 +255,7 @@ footer div h3 {
   cursor: pointer;
 }
 .landingPage .helloText .btn {
+  text-shadow: black 0 0 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   padding: 12px 20px;
@@ -277,8 +264,10 @@ footer div h3 {
   transition: all 0.5s;
 }
 .landingPage .helloText .btn:hover {
-  padding: 12px 30px;
-  background-color: rgba(0, 0, 0, 0.283);
+  padding: 12px 30px 12px 20px;
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
   border-radius: 120px;
 }
 .landingPage .helloText .btn-white {
@@ -288,7 +277,8 @@ footer div h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px auto;
+  display: inline-block;
+  margin: 15px 0;
 }
 
 .about {
@@ -309,12 +299,16 @@ footer div h3 {
   max-width: 250px;
 }
 
+.portfolio {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
 .portfolio h1 {
   text-align: center;
   padding: 20px 0;
 }
 .portfolio .tabs {
-  border-bottom: 3px white solid;
+  border-bottom: 5px white solid;
   margin: 20px 0;
 }
 .portfolio .tabs button {
@@ -413,6 +407,7 @@ footer div h3 {
 }
 
 .contact {
+  height: 100vh;
   text-align: center;
 }
 .contact h1 {
@@ -426,6 +421,9 @@ footer div h3 {
   margin: 0 5px;
 }
 
+.plans {
+  margin-top: 20px;
+}
 .plans h1 {
   text-align: center;
 }
@@ -528,11 +526,6 @@ footer div h3 {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    background-size: 350vmax;
-    background-position-y: -97vh;
-    background-position-x: -237vw;
-  }
   header {
     z-index: 0;
     position: -webkit-sticky;
@@ -541,10 +534,7 @@ footer div h3 {
     background-color: black;
   }
   header .header {
-    width: 95%;
-  }
-  header .header .logo {
-    padding: 0.5vh 0;
+    width: 90%;
   }
   header .header .logo img {
     width: 3.7vw;
@@ -594,6 +584,25 @@ footer div h3 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
+  .landingPage img {
+    width: 55%;
+    top: 18%;
+    right: 1%;
+  }
+  .landingPage .helloText {
+    margin-top: 30%;
+    width: 60%;
+  }
+  .landingPage .helloText h1 {
+    font-size: 30px;
+  }
+  .landingPage .helloText p {
+    font-size: 18px;
+    width: 70%;
+  }
+  .landingPage .helloText .btn-white {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -604,10 +613,8 @@ footer div h3 {
     width: 95%;
   }
   header .header .logo img {
-    width: 5vw;
-  }
-  header .header .logo h2 {
-    font-size: 6vw;
+    width: 200px;
+    padding: 5px 0;
   }
   header .header .menuClickable {
     right: 5vw;
@@ -620,5 +627,29 @@ footer div h3 {
   }
   .container .portfolio .port_box {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .landingPage img {
+    width: 95%;
+    top: 15%;
+    right: 2%;
+  }
+  .landingPage .helloText {
+    margin-top: 130%;
+    width: 100%;
+    text-align: center;
+  }
+  .landingPage .helloText h1 {
+    font-size: 30px;
+  }
+  .landingPage .helloText p {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  .landingPage .helloText .btn-white {
+    font-size: 15px;
+  }
+  .landingPage .helloText .btn-white:hover {
+    padding: 12px 30px 12px 30px;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -1,10 +1,13 @@
 .portfolio{
+    margin-bottom: 50px;
+
+    overflow: hidden;
 
     h1{ text-align: center;
     padding: 20px 0}
 
     .tabs{
-        border-bottom: 3px white solid;
+        border-bottom: 5px white solid;
         margin: 20px 0;
         
         button{

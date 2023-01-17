@@ -1,38 +1,41 @@
-
-
 .landingPage{
+    height: 110vh;
     img{
         width:50%;
         position:absolute;
-        top:0;
-        right:5%
+        top:1%;
+        right:2%;
+        // transition: all 5s;
     }
 
-    
-  
 .helloText{
-    width: 50%;
+    text-shadow:black 0 0 2px;
+    h1{font-size: 45px;}
+    margin-top: 150px;
+    width: 60%;
     align-content: baseline;
    p {
        span{
            transition: all 1s;
        } 
    }
-
     span{
+
         cursor: pointer;
     }
 
     .btn{
+        text-shadow:black 0 0 0;
         backface-visibility: hidden;
         padding: 12px 20px;
         display: block;
         text-transform: uppercase;
         transition: all .5s;
-
          &:hover{
-             padding: 12px 30px;
-             background-color: rgba(0, 0, 0, 0.283);
+             padding: 12px 30px 12px 20px;
+             background-color: yellow;
+             font-weight: bold;
+             color: black;
              border-radius: 120px;
          }
     }
@@ -41,7 +44,8 @@
         color: white;
         border-radius: 100px;
         width: fit-content;
-        margin: 10px auto;
+        display: inline-block;
+        margin: 15px 0;
     }
 }
 }
