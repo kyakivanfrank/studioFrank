@@ -6,7 +6,7 @@ import linkedIn from "../../resources/images/socialMedia/linkedIn.svg"
 
  const Contact = () => <div className='container'>
        <div className="contact">
-            <h1>Reach out to Us</h1>
+            <h1>Reach out to Me</h1>
 
 
             <h3>Email: kyakivanfrank@gmail.com</h3>

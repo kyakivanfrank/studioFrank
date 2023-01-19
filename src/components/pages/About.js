@@ -18,7 +18,7 @@ const About =()=> <div className="container">
     <span>
         <p>Hi there, I'm <b>Frank Ivan Kyakusse</b>. A Front-end web developer and the creator of studio<b>Frank</b> </p>
        <p>My aim here is to showcase my works in technologies of <em>Websites, Web apps, Mobile</em> and <em>Desktops apps</em>, and anything related to design.
-        be sure to check them out.
+        Be sure to check them out in my <a href="https://studiofrank.netlify.app/portfolio" style={{color:"#f5f5c8", fontStyle:"oblique"}}>portfolio</a>
        </p>
        <p>Feel free to check out my works and communicate if anything triggers</p>
        </span> 

@@ -40,6 +40,8 @@ background-color: black;
 width: 90%;
 
 .about{
+
+    height: fit-content;
     padding: 0;
 .hero_details{
     align-items: center;
@@ -60,6 +62,7 @@ width: 90%;
 
 
 .portfolio{
+    // overflow: hidden;
     .port_box{
         grid-template-columns: repeat(2, 1fr);
     }

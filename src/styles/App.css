@@ -567,6 +567,9 @@ footer div h3 {
     width: 80%;
   }
   .container .about {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 0;
   }
   .container .about .hero_details {
