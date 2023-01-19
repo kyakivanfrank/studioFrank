@@ -1,8 +1,8 @@
 import React from 'react'
-import facebook from "../../resources/images/social/facebook.svg"
-import whatsapp from "../../resources/images/social/whatsapp.svg"
-import twitter from "../../resources/images/social/twitter.svg"
-import linkedIn from "../../resources/images/social/linkedIn.svg"
+import facebook from "../../resources/images/socialMedia/facebook.svg"
+import whatsapp from "../../resources/images/socialMedia/whatsapp.svg"
+import twitter from "../../resources/images/socialMedia/twitter.svg"
+import linkedIn from "../../resources/images/socialMedia/linkedIn.svg"
 
  const Contact = () => <div className='container'>
        <div className="contact">

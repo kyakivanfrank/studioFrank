@@ -6,7 +6,11 @@
 }
 
 h1, h2, h3, h4, h5, p {
-  color: white;
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #ffff00;
 }
 
 p {
@@ -16,11 +20,11 @@ p {
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.602)), url("../resources/images/desktopKeyboard.png");
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../resources/images/backgroundImage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position-y: -20vh;
+  transition: all 2s;
 }
 body a {
   text-decoration: none;
@@ -282,6 +286,7 @@ footer div h3 {
 }
 
 .about {
+  height: 110vh;
   overflow-y: auto;
 }
 .about h1 {
@@ -300,8 +305,10 @@ footer div h3 {
 }
 
 .portfolio {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 50px;
-  overflow: hidden;
 }
 .portfolio h1 {
   text-align: center;
