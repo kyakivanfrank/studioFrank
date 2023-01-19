@@ -429,6 +429,7 @@ footer div h3 {
 }
 
 .plans {
+  height: 100vh;
   margin-top: 20px;
 }
 .plans h1 {
@@ -498,9 +499,10 @@ footer div h3 {
   list-style-type: none;
   padding: 8px 0;
 }
-.plans .plans_box span .plan ul li h2 {
+.plans .plans_box span .plan ul li h3 {
   text-align: center;
   font-weight: 300;
+  font-size: 22px !important;
 }
 .plans .plans_box span .plan:hover {
   background-color: rgba(0, 0, 0, 0.424);
@@ -584,6 +586,11 @@ footer div h3 {
   .container .portfolio .port_box {
     grid-template-columns: repeat(2, 1fr);
   }
+  .container .plans {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .container .plans .plans_box {
     transition: all 1s;
     transition-delay: 0.3s;
@@ -658,5 +665,8 @@ footer div h3 {
   }
   .landingPage .helloText .btn-white:hover {
     padding: 12px 30px 12px 30px;
+  }
+  footer div h3 {
+    font-size: 5vw;
   }
 }/*# sourceMappingURL=App.css.map */

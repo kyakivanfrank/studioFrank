@@ -15,10 +15,10 @@ const Plans = ()=> <div className='container'>
     <img id="mobile" src={mobile} alt="mobile_pic"/>
 <h1>Mobile</h1>
 <ul>
-    <li> <h2>price  </h2> </li>
-    <li> <h2>storage  </h2> </li>
-    <li> <h2>performance </h2> </li>
-    <li> <h2>mainteinance </h2> </li>
+    <li> <h3>price  </h3> </li>
+    <li> <h3>storage  </h3> </li>
+    <li> <h3>performance </h3> </li>
+    <li> <h3>mainteinance </h3> </li>
 </ul>
 </div>
 </span>
@@ -29,10 +29,10 @@ const Plans = ()=> <div className='container'>
 <h1>Web</h1>
 
 <ul>
-    <li> <h2>price  </h2> </li>
-    <li> <h2>storage  </h2> </li>
-    <li> <h2>performance </h2> </li>
-    <li> <h2>mainteinance </h2> </li>
+    <li> <h3>price  </h3> </li>
+    <li> <h3>storage  </h3> </li>
+    <li> <h3>performance </h3> </li>
+    <li> <h3>mainteinance </h3> </li>
 </ul>
 </div>
 </span>
@@ -42,10 +42,10 @@ const Plans = ()=> <div className='container'>
 <img id='design' src={graphics} alt="mobile_pic"/>
 <h1>Design</h1>
 <ul>
-    <li> <h2>price  </h2> </li>
-    <li> <h2>storage  </h2> </li>
-    <li> <h2>performance </h2> </li>
-    <li> <h2>mainteinance </h2> </li>
+    <li> <h3>price  </h3> </li>
+    <li> <h3>storage  </h3> </li>
+    <li> <h3>performance </h3> </li>
+    <li> <h3>mainteinance </h3> </li>
 </ul>
 </div>
 </span>
