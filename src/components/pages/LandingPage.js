@@ -3,8 +3,8 @@ import illustration from "../../resources/frank_Illustration.svg";
 
 const LandingPage =()=> {
 
-    const [display, setDisplay] = useState("none")
-    const [read_more, setRead_more] = useState("read more ...")
+    // const [display, setDisplay] = useState("none")
+    // const [read_more, setRead_more] = useState("read more ...")
 
 
 // const toggler =() => {
