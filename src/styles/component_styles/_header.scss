@@ -10,10 +10,12 @@ header{
     }
 
     .header{
+        
         margin: auto;
         width: 80%;
         display: flex;
         .logo{
+            transition: all 3s;
             z-index: 0;
             display: inline-flex;
             img{

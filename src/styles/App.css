@@ -123,6 +123,7 @@ header .header {
   display: flex;
 }
 header .header .logo {
+  transition: all 3s;
   z-index: 0;
   display: inline-flex;
 }
@@ -546,7 +547,7 @@ footer div h3 {
     width: 90%;
   }
   header .header .logo img {
-    width: 3.7vw;
+    width: 20vw;
   }
   header .header .logo h2 {
     font-size: 3.7vw;
@@ -628,7 +629,7 @@ footer div h3 {
   }
   header .header .logo img {
     width: 200px;
-    padding: 5px 0;
+    padding: 8px 0;
   }
   header .header .menuClickable {
     right: 5vw;
