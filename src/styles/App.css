@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1, h2 {
-  color: #ffff00;
+  color: #f8f8ab;
 }
 
 p {
@@ -239,7 +239,7 @@ footer div h3 {
   height: 110vh;
 }
 .landingPage img {
-  width: 50%;
+  width: 45%;
   position: absolute;
   top: 1%;
   right: 2%;
