@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+// import React, {useState} from "react";
+import React from "react";
 import illustration from "../../resources/frank_Illustration.svg";
 
 const LandingPage =()=> {
