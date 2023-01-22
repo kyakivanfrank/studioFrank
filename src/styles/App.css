@@ -196,6 +196,7 @@ footer div h3 {
   transition: 0.3s;
 }
 .modal_overlay .modal-img {
+  transition: all 2s;
   margin: auto;
   display: block;
   width: 80%;
