@@ -2,6 +2,7 @@ import React from 'react'
 import mobile from '../../resources/images/workType/mobile.svg'
 import pc from '../../resources/images/workType/pc.svg'
 import graphics from '../../resources/images/workType/graphics.svg'
+import arrow  from '../../resources/arrow.svg'
 
 
 const Plans = ()=> <div className='container'>
@@ -50,7 +51,8 @@ const Plans = ()=> <div className='container'>
 </div>
 </span>
         </div>
-
+<h4><a href='http://localhost:3000/portfolio'>
+    Check reference from my portfolio <img src={arrow} alt="arrow" /></a></h4>
 </div>
 </div>
 

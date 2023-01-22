@@ -354,6 +354,10 @@ footer div h3 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 }
+.portfolio .port_box #portfolio_link {
+  display: inline;
+  float: right;
+}
 .portfolio .port_box .work {
   cursor: pointer;
   position: relative;
@@ -445,6 +449,23 @@ footer div h3 {
   height: 100vh;
   margin-top: 20px;
 }
+.plans h4 {
+  display: inline;
+  float: right;
+  padding-right: 5%;
+  border-bottom: 2px;
+}
+.plans h4 a {
+  color: white;
+}
+.plans h4 a img {
+  transition: all 0.7s;
+  width: 20px;
+}
+.plans h4:hover img {
+  transform: translateX(15px);
+  transition: all 0.7s;
+}
 .plans h1 {
   text-align: center;
 }
@@ -469,7 +490,7 @@ footer div h3 {
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.67);
+  background-color: rgba(121, 119, 119, 0.2588235294);
 }
 .plans .plans_box span .plan img {
   position: absolute;
@@ -477,12 +498,12 @@ footer div h3 {
   transition-delay: 0.3s;
 }
 .plans .plans_box span .plan #mobile {
-  width: 30%;
-  left: 35%;
-  top: 20%;
+  height: 65%;
+  left: 33%;
+  top: 18%;
 }
 .plans .plans_box span .plan #web, .plans .plans_box span .plan #design {
-  width: 60%;
+  height: 45%;
   left: 20%;
   top: 30%;
 }
@@ -518,33 +539,33 @@ footer div h3 {
   font-size: 22px !important;
 }
 .plans .plans_box span .plan:hover {
-  background-color: rgba(0, 0, 0, 0.424);
+  background-color: rgba(121, 119, 119, 0.568627451);
   transform: rotate(360deg);
   border-radius: 20px;
   width: 300px;
   height: 350px;
 }
 .plans .plans_box span .plan:hover h1 {
-  top: 5%;
+  top: 18%;
 }
 .plans .plans_box span .plan:hover ul {
   transform: translate(-50%) scale(1);
   opacity: 1;
 }
 .plans .plans_box span .plan:hover img {
-  margin: 10px;
+  position: absolute;
   transition: all 1s;
   transition-delay: 0.3s;
 }
 .plans .plans_box span .plan:hover #mobile {
-  width: 10%;
-  top: 4%;
-  left: 2%;
+  height: 14%;
+  left: 45%;
+  top: 3%;
 }
 .plans .plans_box span .plan:hover #web, .plans .plans_box span .plan:hover #design {
-  top: 4%;
-  left: 2%;
-  width: 25%;
+  height: 14%;
+  left: 40%;
+  top: 3%;
 }
 
 @media screen and (max-width: 1024px) {

@@ -45,6 +45,11 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1em;
 
+        #portfolio_link{
+         display:inline;
+         float:right;
+        }
+
         .work{
             cursor: pointer;
             position: relative;
