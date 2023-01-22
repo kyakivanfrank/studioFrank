@@ -1,10 +1,9 @@
 import React from 'react'
-import pic from "../../resources/sample-works/web/work.jpg"
 import portfolio_data from '../portfolio_data'
 
 
 const ModalOverlay = ({params})=> {
-  const {eachItem, index, active_tab} = params;
+  const {index, active_tab} = params;
   const item = portfolio_data[active_tab][index]
 
 return <div className="modal_overlay">
