@@ -1,5 +1,4 @@
 import React from "react"
-import workImage from "../../resources/project_images/projectOne.jpg"
 
 const SingleWork = ({eachItem, index, active_tab})=>{
     const {project_name, project_image} = eachItem;
