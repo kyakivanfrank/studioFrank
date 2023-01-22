@@ -14,7 +14,8 @@
     margin-top: 150px;
     width: 60%;
     align-content: baseline;
-   p {
+
+         p {
        span{
            transition: all 1s;
        } 
@@ -31,6 +32,7 @@
         display: block;
         text-transform: uppercase;
         transition: all .5s;
+        
          &:hover{
              padding: 12px 30px 12px 20px;
              background-color: yellow;
@@ -40,11 +42,12 @@
          }
     }
     .btn-white{
+
         border: 2px yellow solid;
         color: white;
         border-radius: 100px;
         width: fit-content;
-        display: inline-block;
+        display: block;
         margin: 15px 0;
     }
 }

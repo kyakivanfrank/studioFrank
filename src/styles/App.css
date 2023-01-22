@@ -289,7 +289,7 @@ footer div h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: inline-block;
+  display: block;
   margin: 15px 0;
 }
 

@@ -29,7 +29,7 @@ const LandingPage =()=> {
     </p>
     <p>As you've reached out, we'll create solutions for you quite affordably</p> */}
     </>
-    <a href="/plans" className="btn btn-white">Let's build your project</a>
+    <span className="button"><a href="/plans" className="btn btn-white">Let's build your project </a></span>
     </div>
     </div>
     </div>
