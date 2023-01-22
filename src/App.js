@@ -19,10 +19,9 @@ import ModalOverlay  from "./components/pages/ModalOverlay";
 class App extends React.Component {
 
 
-
 render(){
     return <GlobalProvider>
-        <Route exact path={`/portfolio/:eachItem`} render={ ({match}) => <ModalOverlay {...match} /> } /> 
+        <Route exact path={`/portfolio/:active_tab/:index/:eachItem`} render={ ({match}) => <ModalOverlay {...match}  /> } /> 
 
         <div className="main">
             

@@ -1,28 +1,26 @@
 import React, {useState} from 'react'
 import SingleWork from './SingleWork'
+import portfolio_data from '../portfolio_data'
+const {software, design} = portfolio_data;
 
 const PortfolioTabs =()=> {
- 
-  const arry = { "web": ["website", "web app", "native app", "desktop app","website", "web app", "native app", "desktop app","website", "web app", "native app", "desktop app","website", "web app", "native app", "desktop app" ],  "graphics": ["logo design",  "portfolio design", "poster design"] }
 
-  const [ data, setData ] = useState(arry.web)
+  const [ data, setData ] = useState(software)
   
-    const webclassName = data[0] === arry.web[0] ? 'active-tab' : ''
-    const graphicsclassName = data[0] === arry.graphics[0] ? 'active-tab' : ''
-    
+    const software_ = data[0] === software[0] ? 'active-tab' : ''
+    const design_ = data[0] === design[0] ? 'active-tab' : ''
+
+    const active_tab = data[0] === software[0] ? "software" : "design"
+  
   return <>
         <div className="tabs">
-  <button onClick={()=> setData(arry.web)} id="web" className={`${ webclassName } active`}>WEB DEVELOPMENT</button>
-  <button onClick={()=> setData(arry.graphics)} id="graphics" className={`${graphicsclassName} active`}>DESIGN</button>
+  <button onClick={()=> setData(software)} id="software" className={`${ software_ } active`}>SOFTWARE DEVELOPMENT</button>
+  <button onClick={()=> setData(design)} id="design" className={`${ design_ } active`}>DESIGN</button>
         </div> 
-
 <div className="tabcontent">
 <section className="port_box">
-{data.map( (eachItem, index) => <SingleWork key={index} eachItem={eachItem} /> )}
-
-
+{data.map( (eachItem, index) => <SingleWork key={index} eachItem={eachItem} active_tab={active_tab} index={index} /> )}
 </section>
-
 </div>
 </>
 }

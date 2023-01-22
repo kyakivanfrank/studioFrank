@@ -17,10 +17,10 @@ const Menu=()=>{
     </div>
 
 <ul>
-    <li><a href="/plans"><h3>plans</h3></a></li>
+    <li><a href="/plans"><h3>what i do</h3></a></li>
     <li><a href="/about"><h3>about</h3></a></li>
     <li><a href="/portfolio"><h3>portfolio</h3></a></li>
-    <li><a disabled href="/contact"><h3>contact Me</h3></a></li>
+    <li><a disabled href="/contact"><h3>contact me</h3></a></li>
 </ul>
 </div>
 </>
