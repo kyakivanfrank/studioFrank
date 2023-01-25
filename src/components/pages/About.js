@@ -17,10 +17,11 @@ const About =()=> <div className="container">
 
     <span>
         <p>Hi there, I'm <b>Frank Ivan Kyakusse</b>. A Front-end web developer and the creator of studio<b>Frank</b> </p>
-       <p>My aim here is to showcase my works in technologies of <em>Websites, Web apps, Mobile</em> and <em>Desktops apps</em>, and anything related to design.
-        Be sure to check them out in my <a href="https://studiofrank.netlify.app/portfolio" style={{color:"#f5f5c8", fontStyle:"oblique"}}>portfolio</a>
-       </p>
-       <p>Feel free to check out my works and communicate if anything triggers</p>
+        <p>
+        My enthusiasm lies in building and giving Interactivity to User Interfaces on all platforms like Web apps, and mobile and desktop apps.</p>
+        <p>The fact is that I'm thrilled by simple but satisfying designs, and that's where i work towards.</p>
+        <p>Please feel free to navigate through <a href="https://studiofrank.netlify.app/portfolio" style={{color:"#f5f5c8", fontStyle:"oblique"}}>My portfolio</a>, something might click you never know.</p>
+       
        </span> 
 </div>
 </div>
