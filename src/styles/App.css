@@ -704,6 +704,15 @@ footer div h3 {
   .landingPage .helloText .btn-white:hover {
     padding: 12px 30px 12px 30px;
   }
+  .modal_overlay {
+    width: 100%; /* Full width */
+  }
+  .modal_overlay .modal-img {
+    width: 95%;
+  }
+  .modal_overlay #caption {
+    width: 95%;
+  }
   footer div h3 {
     font-size: 5vw;
   }
