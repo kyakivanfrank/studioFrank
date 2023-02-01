@@ -16,7 +16,7 @@ import linkedIn from "../../resources/images/socialMedia/linkedIn.svg"
 <a href="https://www.facebook.com/frankIvanplusplus/"><img src={facebook} alt="facebook"/> </a>
 <a href="https://twitter.com/chaku_ii"><img src={twitter} alt="twitter"/> </a>
 <a href="https://wa.me/256708481316"><img src={whatsapp} alt="whatsapp"/> </a>
-<a href="https://ug.linkedin.com/in/kyakusse-frank-ivan"><img src={linkedIn} alt="whatsapp"/> </a>
+<a href="https://www.linkedin.com/in/FrankIvanKyakusse"><img src={linkedIn} alt="whatsapp"/> </a>
         </div></div>
 
  </div>
