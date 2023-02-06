@@ -2,5 +2,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://www.frankkyakusse.com/sitemap.txt
+Sitemap: https://frankkyakusse.com/sitemap.txt
 =======
