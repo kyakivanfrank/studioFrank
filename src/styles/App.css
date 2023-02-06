@@ -539,12 +539,17 @@ footer div h3 {
   font-weight: 300;
   font-size: 22px !important;
 }
+.plans .plans_box span .plan ul li h3 span {
+  font-size: 50px;
+  color: yellow;
+  font-weight: 500;
+}
 .plans .plans_box span .plan:hover {
   background-color: rgba(121, 119, 119, 0.568627451);
   transform: rotate(360deg);
   border-radius: 20px;
   width: 300px;
-  height: 350px;
+  height: 400px;
 }
 .plans .plans_box span .plan:hover h1 {
   top: 18%;

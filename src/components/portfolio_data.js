@@ -6,7 +6,7 @@ import Ndongomusicplatform from "../resources/project_images/ndongo_music_platfo
  const portfolio_data = {
     "software": [
         {"project_name":"Ndongo Music Platform",
-        "project_description":"is intended to showcase an online repository of Music from uganda artistes that could be played online and download, the user is able to search for their favourite song, play it while they can also view the lyrics, it also gives are relation of the same artists music, the album name and the ",
+        "project_description":"This app is intended to showcase an online repository of Music from ugandan artistes that could be played online and downloaded, The user is able to search for their favourite song, play it while they can also view the lyrics, it also portrays the relationship between different artists, clasifying them into music categories and show their albums.",
         "project_image":Ndongomusicplatform},
         {"project_name":"Star Dental Services",
         "project_description":"orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",

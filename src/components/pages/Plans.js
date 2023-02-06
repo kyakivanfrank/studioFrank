@@ -13,27 +13,26 @@ const Plans = ()=> <div className='container'>
 <div className="plans_box">
 <span>
 <div className="plan">
-    <img id="mobile" src={mobile} alt="mobile_pic"/>
-<h1>Mobile</h1>
+<img id="web" src={pc} alt="mobile_pic"/>
+<h1>Web</h1>
 <ul>
-    <li> <h3>price  </h3> </li>
-    <li> <h3>storage  </h3> </li>
-    <li> <h3>performance </h3> </li>
-    <li> <h3>mainteinance </h3> </li>
+    <li> <h3>great landing-pages</h3> </li>
+    <li> <h3>Responsive designs</h3> </li>
+    <li> <h3>search engine optimization</h3> </li>
+    <li> <h3>+<span>$100</span></h3> </li>
 </ul>
 </div>
 </span>
-
 <span>
 <div className="plan">
-<img id="web" src={pc} alt="mobile_pic"/>
-<h1>Web</h1>
-
+    <img id="mobile" src={mobile} alt="mobile_pic"/>
+<h1>Mobile</h1>
 <ul>
-    <li> <h3>price  </h3> </li>
-    <li> <h3>storage  </h3> </li>
-    <li> <h3>performance </h3> </li>
-    <li> <h3>mainteinance </h3> </li>
+    <li> <h3>Android & IOS apps</h3> </li>
+    <li> <h3>"Easy to navigate" UI</h3> </li>
+    <li> <h3>Fast interactivity</h3> </li>
+    <li> <h3>Simple but scalable</h3> </li>
+    <li> <h3>$300</h3> </li>
 </ul>
 </div>
 </span>
@@ -43,10 +42,10 @@ const Plans = ()=> <div className='container'>
 <img id='design' src={graphics} alt="mobile_pic"/>
 <h1>Design</h1>
 <ul>
-    <li> <h3>price  </h3> </li>
-    <li> <h3>storage  </h3> </li>
-    <li> <h3>performance </h3> </li>
-    <li> <h3>mainteinance </h3> </li>
+    <li> <h3>price</h3> </li>
+    <li> <h3>storage</h3> </li>
+    <li> <h3>performance</h3> </li>
+    <li> <h3>mainteinance</h3> </li>
 </ul>
 </div>
 </span>
