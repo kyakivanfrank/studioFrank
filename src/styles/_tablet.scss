@@ -88,11 +88,12 @@ width: 90%;
 .landingPage{
     img{
         width:55%;
-        top:18%;
+        top:10%;
         right:1%;
     }
 
     .helloText{
+        // align-content: center;
         h1{font-size: 30px;}
         margin-top: 30%;
         width: 60%;
@@ -102,6 +103,8 @@ width: 90%;
         }
         .btn-white{
             font-size: 15px;
+            width: initial;
+
         }
 
     }

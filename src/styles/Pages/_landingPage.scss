@@ -3,7 +3,7 @@
     img{
         width:45%;
         position:absolute;
-        top:1%;
+        top:2%;
         right:2%;
         // transition: all 5s;
     }
@@ -20,18 +20,18 @@
            transition: all 1s;
        } 
    }
-    span{
-
-        cursor: pointer;
+    span{cursor: pointer;
     }
 
+    
     .btn{
         text-shadow:black 0 0 0;
         backface-visibility: hidden;
         padding: 12px 20px;
-        display: block;
+        display: flex;
         text-transform: uppercase;
         transition: all .5s;
+
         
          &:hover{
              padding: 12px 30px 12px 20px;
@@ -42,7 +42,6 @@
          }
     }
     .btn-white{
-
         border: 2px yellow solid;
         color: white;
         border-radius: 100px;
