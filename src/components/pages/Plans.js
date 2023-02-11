@@ -3,7 +3,7 @@ import mobile from '../../resources/images/workType/mobile.svg'
 import pc from '../../resources/images/workType/pc.svg'
 import graphics from '../../resources/images/workType/graphics.svg'
 import arrow  from '../../resources/arrow.svg'
-import price_tag from '../../resources/price-tag.gif'
+import price_tag from '../../resources/price-tag.svg'
 
 
 const Plans = ()=> <div className='container'>
@@ -20,7 +20,7 @@ const Plans = ()=> <div className='container'>
     <li> <h3>great landing-pages</h3> </li>
     <li> <h3>Responsive designs</h3> </li>
     <li> <h3>search engine optimization</h3> </li>
-    <li className='price'><span className='pricespan'>starting from <h1>370<span>000Ugx</span></h1></span><img src={price_tag}  alt='price_img'/> </li>
+    <li className='price'><img src={price_tag}  alt='price_img'/> </li>
 </ul>
 </div>
 </span>
@@ -51,7 +51,7 @@ const Plans = ()=> <div className='container'>
 </div>
 </span>
         </div>
-<h4><a href='https://studiofrank.netlify.app/portfolio'>
+<h4><a href='https://frankkyakusse.com/portfolio'>
     Check reference from my portfolio <img  src={arrow} alt="arrow" /></a></h4>
 </div>
 </div>
