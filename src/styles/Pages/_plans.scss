@@ -34,14 +34,14 @@ h1{
 }
 .plans_box{
     padding: initial;
-transition: all 1s;
-transition-delay: .3s;
+    transition: all 1s;
+    transition-delay: .3s;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
 
     span{
-        margin: 0 0 60px;
+        margin: 0 0 80px;
 
         .plan{
             img{
@@ -104,6 +104,7 @@ transition-delay: .3s;
                         }
                     }
                     h3{
+                        color: black;
                         span{ font-size: 50px; color: yellow; font-weight: 500;}
                         text-align: center;
                         font-weight: 300;
@@ -116,10 +117,6 @@ transition-delay: .3s;
                     .pricespan{
                         top: auto;
                         h1{
-                            // span{
-                            //     font-size: 18px;
-                            //     text-align: baseline;
-                            // }
                             font-size: 40px;
                             font-weight: bold;
                         }
@@ -130,7 +127,6 @@ transition-delay: .3s;
                 }
             }
             backface-visibility: hidden;
-            transition: all 1s;
             transition-delay: .3s;
             margin: 0 auto;
             cursor: pointer;
@@ -139,16 +135,20 @@ transition-delay: .3s;
             height: 250px;
             border-radius: 100%;
             background-color: #79777742;
+            transition: all 1s;
             &:hover{
-               
-                background-color: #79777791;
+                background-color: #ffffffcc;
                 transform: rotate(360deg);
                 border-radius: 20px;
                 width: 300px;
                 height: 400px;
+                transition: all 1s;
+
 
                 h1{
                     top:18%;
+                    color: #000000b3;
+                    font-weight: bold;
                     
                 }
                     ul{
@@ -168,7 +168,7 @@ transition-delay: .3s;
                     }
                     #web,#design{
                         height: 14%;
-                         left:40%;
+                         left:37%;
                          top:3%; 
                     }
                     

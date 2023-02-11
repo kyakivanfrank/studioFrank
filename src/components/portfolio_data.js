@@ -9,7 +9,7 @@ import Ndongomusicplatform from "../resources/project_images/ndongo_music_platfo
         "project_description":"This app is intended to showcase an online repository of Music from ugandan artistes that could be played online and downloaded, The user is able to search for their favourite song, play it while they can also view the lyrics, it also portrays the relationship between different artists, clasifying them into music categories and show their albums.",
         "project_image":Ndongomusicplatform},
         {"project_name":"Star Dental Services",
-        "project_description":"orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "project_description":"Star dental services is a dental shop's landing page that helps to connect the dentist closer to his customers, by displaying the types of services he offers to them, the testimonials and how the can quickly reach out for treatment.",
         "project_image":stardentalservices},
         {"project_name":"Gladstep Junior School",
         "project_description":"Gladstep is a primary school located in kawempe, kampala. whose website gives a bit of detail about the school, thier curricullum and activities, it shows their contacts, the locations and et",

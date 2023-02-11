@@ -52,7 +52,7 @@ const Plans = ()=> <div className='container'>
 </span>
         </div>
 <h4><a href='https://frankkyakusse.com/portfolio'>
-    Check reference from my portfolio <img  src={arrow} alt="arrow" /></a></h4>
+    references from my portfolio <img  src={arrow} alt="arrow" /></a></h4>
 </div>
 </div>
 

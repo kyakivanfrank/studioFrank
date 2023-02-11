@@ -18,9 +18,9 @@ const About =()=> <div className="container">
     <span>
         <p>Hi there, I'm <b>Frank Ivan Kyakusse</b>. A Front-end web developer and the creator of studio<b>Frank</b> </p>
         <p>
-        My enthusiasm lies in building and giving Interactivity to User Interfaces on all platforms like Web apps, and mobile and desktop apps.</p>
-        <p>The fact is that I'm thrilled by simple but satisfying designs, and that's where i work towards.</p>
-        <p>Please feel free to navigate through <a href="https://studiofrank.netlify.app/portfolio" style={{color:"#f5f5c8", fontStyle:"oblique"}}>My portfolio</a>, something might click you never know.</p>
+        The fact is that I'm thrilled by simple but satisfying designs, From my research, I learned that in this era <strong>minimalism is the new complexity.</strong>  what matters most is that as long as a platform holds all the desired uses-cases, it doesn't neccesarily need as many UI elements for each feature. that means just  mere button can unravel different features in dfferent scenarios. thus having a clean User-interface that could be easily scalable. and this is what i work towards.
+        </p>
+        <p>Feel free to navigate through <a href="https://frankkyakusse.com/portfolio" style={{color:"#f5f5c8", fontStyle:"oblique"}}>My portfolio</a>, something might click you never know.</p>
        
        </span> 
 </div>

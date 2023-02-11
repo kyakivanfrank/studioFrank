@@ -295,6 +295,7 @@ footer div h3 {
 .portfolio {
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
   margin-bottom: 50px;
 }
 .portfolio h1 {
@@ -345,12 +346,13 @@ footer div h3 {
 .portfolio .port_box .work h3 {
   position: absolute;
   bottom: 10%;
-  z-index: 2;
+  z-index: 1;
   transition: all 2s;
   left: 5%;
   font-weight: 400;
   text-shadow: 2px, 2px, 2px, black;
   text-transform: capitalize;
+  transition: 0.5s all;
 }
 .portfolio .port_box .work img {
   background-color: rgba(0, 0, 0, 0.15);
@@ -365,6 +367,9 @@ footer div h3 {
 .portfolio .port_box .work:hover h3 {
   transform: scale(1.1);
   opacity: 1;
+  padding: 2px 5px 2px 10px;
+  background-color: rgba(0, 0, 0, 0.8509803922);
+  transition: 0.5s all;
 }
 .portfolio .port_box .work:hover img {
   opacity: 1;
@@ -439,12 +444,11 @@ footer div h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 .plans .plans_box span {
-  margin: 0 0 60px;
+  margin: 0 0 80px;
 }
 .plans .plans_box span .plan {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  transition: all 1s;
   transition-delay: 0.3s;
   margin: 0 auto;
   cursor: pointer;
@@ -453,6 +457,7 @@ footer div h3 {
   height: 250px;
   border-radius: 100%;
   background-color: rgba(121, 119, 119, 0.2588235294);
+  transition: all 1s;
 }
 .plans .plans_box span .plan img {
   position: absolute;
@@ -514,6 +519,7 @@ footer div h3 {
   font-size: 10px;
 }
 .plans .plans_box span .plan ul li h3 {
+  color: black;
   text-align: center;
   font-weight: 300;
   font-size: 22px !important;
@@ -540,14 +546,17 @@ footer div h3 {
   font-weight: bold;
 }
 .plans .plans_box span .plan:hover {
-  background-color: rgba(121, 119, 119, 0.568627451);
+  background-color: rgba(255, 255, 255, 0.8);
   transform: rotate(360deg);
   border-radius: 20px;
   width: 300px;
   height: 400px;
+  transition: all 1s;
 }
 .plans .plans_box span .plan:hover h1 {
   top: 18%;
+  color: rgba(0, 0, 0, 0.7019607843);
+  font-weight: bold;
 }
 .plans .plans_box span .plan:hover ul {
   transform: translate(-50%) scale(1);
@@ -565,7 +574,7 @@ footer div h3 {
 }
 .plans .plans_box span .plan:hover #web, .plans .plans_box span .plan:hover #design {
   height: 14%;
-  left: 40%;
+  left: 37%;
   top: 3%;
 }
 
