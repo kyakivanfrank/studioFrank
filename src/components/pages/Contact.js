@@ -10,7 +10,7 @@ import linkedIn from "../../resources/images/socialMedia/linkedIn.svg"
 
 
             <h3>Email: kyakivanfrank@gmail.com</h3>
-            <h3>call: 0708481316</h3>
+            <h3>call: +256-708-481316</h3>
 
 <div className="socialIcons">
 <a href="https://www.facebook.com/frankIvanplusplus/"><img src={facebook} alt="facebook"/> </a>
