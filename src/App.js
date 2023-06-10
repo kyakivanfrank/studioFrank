@@ -24,7 +24,6 @@ render(){
         <Route exact path={`/portfolio/:active_tab/:index/:eachItem`} render={ ({match}) => <ModalOverlay {...match}  /> } /> 
 
         <div className="main">
-            
         <Menu/>
         <Header/>
         <Switch>
