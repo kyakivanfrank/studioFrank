@@ -149,7 +149,8 @@ header .header .menuClickable .clicked .bar3 {
 }
 
 footer div {
-  float: right;
+  text-align: center;
+  margin: 0 auto;
   padding: 10px;
 }
 footer div h3 {
@@ -739,8 +740,8 @@ footer div h3 {
 }
 .empty-page {
   display: flex;
-  min-width: 100vw;
-  min-height: 70vh;
+  min-height: 60vh;
+  overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0.02);
 }
 
@@ -757,4 +758,71 @@ footer div h3 {
   100% {
     background-position: 200% 0;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+/* Assuming you have some base styles for your component */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.backdrop-blur-md {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+/* Define a common style for the icon containers */
+.icon-container {
+  width: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+/* Apply hover effect to the icon containers */
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+/* Define a common style for the icons */
+.icon-img {
+  height: 4rem;
+  margin: 0 auto;
+}
+
+/* Additional styling for individual icons if needed */
+/* .icon-container:nth-child(odd) {
+  background-color: lightgray;
+} */
+/* Define styles for individual icons */
+/* .icon-figma {
+  background-image: url("../resources/tech_icons/figma.png");
+} */
+/* .icon-firebase {
+  background-image: url("../resources/tech_icons/firebase.jpg");
+} */
+/* .icon-ai {
+  background-image: url("../resources/tech_icons/illustrator.png");
+} */
+/* .icon-photoshop {
+  background-image: url("../resources/tech_icons/photoshop.png");
+} */
+/* .icon-js {
+  background-image: url("../resources/tech_icons/javascript.png");
+} 
+
+/* .icon-react {
+  background-image: url("../resources/tech_icons/react.png");
+} *//*# sourceMappingURL=App.css.map */
