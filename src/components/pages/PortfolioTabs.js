@@ -19,11 +19,11 @@ const PortfolioTabs =()=> {
         </div> 
 <div className="tabcontent">
 <section className="port_box">
-{!data.length === 0 ? data.map( (eachItem, index) => <SingleWork key={index} eachItem={eachItem} active_tab={active_tab} index={index} /> ) :  
- <div class="empty-page">
+{data.length === 0 ?  <div class="empty-page">
   <h1>{active_tab} is empty</h1>
         <div class="skeleton"></div>
-    </div>
+    </div> : data.map( (eachItem, index) => <SingleWork key={index} eachItem={eachItem} active_tab={active_tab} index={index} /> )   
+
     }
 </section>
 </div>
