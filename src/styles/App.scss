@@ -140,3 +140,26 @@ body{
 
 //  this is mobile view
 @import './mobile';
+.empty-page {
+    display: flex;
+    min-width: 100vw;
+    min-height: 70vh;
+
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+.skeleton {
+   
+    background: linear-gradient(90deg, #20202031 25%, #7e7c7c11 50%, #41030325 75%);
+    background-size: 200% 100%;
+    animation: loading 10s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}

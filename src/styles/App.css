@@ -249,8 +249,7 @@ footer div h3 {
 }
 .landingPage .helloText .btn {
   text-shadow: black 0 0 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   padding: 12px 20px;
   display: flex;
   text-transform: uppercase;
@@ -447,8 +446,7 @@ footer div h3 {
   margin: 0 0 80px;
 }
 .plans .plans_box span .plan {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition-delay: 0.3s;
   margin: 0 auto;
   cursor: pointer;
@@ -736,5 +734,26 @@ footer div h3 {
   }
   footer div h3 {
     font-size: 5vw;
+  }
+}
+.empty-page {
+  display: flex;
+  min-width: 100vw;
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.skeleton {
+  background: linear-gradient(90deg, rgba(32, 32, 32, 0.1921568627) 25%, rgba(126, 124, 124, 0.0666666667) 50%, rgba(65, 3, 3, 0.1450980392) 75%);
+  background-size: 200% 100%;
+  animation: loading 10s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }/*# sourceMappingURL=App.css.map */
