@@ -3,9 +3,14 @@ import gladstepjuniorschool from "../resources/project_images/gladstep_junior_sc
 import studiofrank from "../resources/project_images/studio_frank.png" 
 import buyangadairyfarm from "../resources/project_images/buyanga_dairy_farm.png" 
 import Ndongomusicplatform from "../resources/project_images/ndongo_music_platform.png" 
+import sonkoportraiture from "../resources/project_images/sonkoportraiture.png" 
  const portfolio_data = {
     "software": [
-        {"project_name":"Ndongo Music Platform",
+        {"project_name":"Sonko portraiture",
+        "project_description":"Portfolio for a Uganda based videographer, I'm sonko henry, A Ugandan photographer/ Videographer based in Dubai. Taking beautiful picture of people and amazing sunsets is one of my niches.",
+        "project_image":sonkoportraiture,
+        "tools":["React", "tailwind","https://www.sonkoportraiture.com/","Git"]},
+           {"project_name":"Ndongo Music Platform",
         "project_description":"This app is intended to showcase an online repository of Music from ugandan artistes that could be played online and downloaded, The user is able to search for their favourite song, play it while they can also view the lyrics, it also portrays the relationship between different artists, clasifying them into music categories and show their albums.",
         "project_image":Ndongomusicplatform,
         "tools":["React","ndongo-music-app.netlify.app","Git"]},
