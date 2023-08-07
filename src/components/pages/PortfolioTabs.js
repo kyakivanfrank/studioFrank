@@ -25,9 +25,9 @@ const PortfolioTabs = () => {
       <div className="tabcontent">
         <section className="port_box">
           {data.length === 0 ? (
-            <div class="empty-page">
+            <div className="empty-page">
               <h1>{active_tab} is empty</h1>
-              <div class="skeleton"></div>
+              <div className="skeleton"></div>
             </div>
           ) : (
             data.map((eachItem, index) => (
