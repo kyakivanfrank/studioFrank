@@ -1,6 +1,5 @@
 import React from "react";
 import illustration from "../../resources/frank_Illustration.svg";
-import TechnologyIcons from "../tech-icons";
 
 const LandingPage = () => {
   const date = new Date();
