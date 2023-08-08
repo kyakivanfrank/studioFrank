@@ -825,4 +825,30 @@ footer div h3 {
 
 /* .icon-react {
   background-image: url("../resources/tech_icons/react.png");
-} *//*# sourceMappingURL=App.css.map */
+} */
+.floatingWwhatsappBTN {
+  z-index: 10;
+  position: fixed;
+  width: 70px;
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Adding transition effect */
+}
+.floatingWwhatsappBTN:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Enhance the glow on hover */
+}
+@media (min-width: 992px) {
+  .floatingWwhatsappBTN {
+    width: 100px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}/*# sourceMappingURL=App.css.map */
