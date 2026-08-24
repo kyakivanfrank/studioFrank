@@ -55,7 +55,7 @@ export function SiteHeader() {
             <Image
               src="/logo.svg"
               alt=""
-              width={132}
+              width={199}
               height={28}
               priority
               className="h-6 w-auto transition-opacity group-hover:opacity-80 md:h-7"

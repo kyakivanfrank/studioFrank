@@ -15,3 +15,6 @@ next-env.d.ts
 
 # Local copy of the pre-Next.js CRA app. The real history lives on origin/main.
 legacy-cra/
+
+# graphify knowledge-graph output (regenerate with /graphify)
+graphify-out/

@@ -71,8 +71,8 @@ export default function HomePage() {
             <Image
               src="/images/illustration.svg"
               alt="Illustration of Frank at a desk, building an interface"
-              width={720}
-              height={720}
+              width={649}
+              height={646}
               priority
               className="h-auto w-full drop-shadow-2xl"
             />
