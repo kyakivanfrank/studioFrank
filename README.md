@@ -50,8 +50,12 @@ the project gets a generated cover — used for products that sit behind a login
 Years of experience are computed from `CAREER_START_YEAR` (2019) in
 `src/data/site.ts`, so the copy never goes stale.
 
-## Legacy
+## History
 
-`legacy-cra/` holds the original Create React App build (React 16, SCSS,
-react-router 5) that this replaced. It is excluded from TypeScript and is kept
-for reference only — nothing imports from it.
+The Create React App build this replaced (React 16, SCSS, react-router 5) is
+preserved in git history at commit `38c7865` and earlier. To read it:
+
+```bash
+git show 38c7865:src/App.js
+git checkout 38c7865 -- .   # restore the whole old tree, if ever needed
+```
