@@ -50,6 +50,17 @@ the project gets a generated cover — used for products that sit behind a login
 Years of experience are computed from `CAREER_START_YEAR` (2019) in
 `src/data/site.ts`, so the copy never goes stale.
 
+## Deployment
+
+Vercel, from `main`. `vercel.json` pins the framework to `nextjs` so the
+project cannot fall back to the old Create React App preset.
+
+If a build ever fails with *"No Output Directory named `build` found"*, the
+Vercel project still carries a CRA override. Clear it in
+**Settings → Build & Deployment**: Framework Preset = Next.js, and reset the
+Build Command and Output Directory overrides so they inherit from the
+framework. Next.js builds to `.next`, never to `build/`.
+
 ## History
 
 The Create React App build this replaced (React 16, SCSS, react-router 5) is
