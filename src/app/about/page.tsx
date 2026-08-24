@@ -88,21 +88,21 @@ export default function AboutPage() {
       <section className="shell pt-36 pb-16 md:pt-44">
         <div className="grid items-start gap-14 lg:grid-cols-[1fr_1.25fr]">
           <div className="relative mx-auto w-full max-w-sm lg:sticky lg:top-28">
+            {/* The photo is a circular cut-out with a transparent surround, so it
+                gets no frame — a glow shaped to the cut-out, and nothing else. */}
             <div
               aria-hidden
-              className="absolute -inset-3 -z-10 rounded-3xl bg-accent/10 blur-2xl"
+              className="absolute inset-4 -z-10 rounded-full bg-accent/10 blur-3xl"
             />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/12">
-              <Image
-                src="/images/frank.png"
-                alt={`${site.owner}, frontend engineer and designer`}
-                fill
-                priority
-                sizes="(min-width: 1024px) 380px, 90vw"
-                className="object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
-            </div>
+            <Image
+              src="/images/frank.png"
+              alt={`${site.owner}, frontend engineer and designer`}
+              width={813}
+              height={868}
+              priority
+              sizes="(min-width: 1024px) 380px, 90vw"
+              className="h-auto w-full"
+            />
             <p className="mt-4 text-xs leading-relaxed text-white/40">
               {site.owner} — {site.role}, working out of {site.locale.split(" · ")[0]}.
             </p>
